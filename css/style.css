@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.matriz-container {
+  border: solid 1px #ccc;
+  max-width: 700px;
+  height: 500px;
+  margin: 20px auto 0;
+  border-radius: 5px;
+}
+
+.matriz-container table {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
