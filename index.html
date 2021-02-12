@@ -7,22 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matriz</title>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+
 </head>
 
 <body>
     <div class="matriz-container">
-        <table border="1">
+        <table class="table">
             <thead>
+                <tr>
+                    <th rowspan="2" class="indice-v">teste</th>
+                    <th colspan="4" class="indice-h">Índice de severidade do dano</th>
+                </tr>
                 <tr>
                     <th>Leve (2)</th>
                     <th>Moderado (4)</th>
@@ -32,28 +34,224 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
+                    <th>Remoto (1)</th>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                <i class="fal fa-times"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                4
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                8
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                16
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
+                    <th>Improvável (3)</th>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                6
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                               12
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                24
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                48
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
+                    <th>Ocasional (5)</th>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                10
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                20
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                40
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                80
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
-                    <td><button type="button">x</button></td>
+                    <th>Provável (7)</th>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                14
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                28
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                56
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                112
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" type="button"><span class="color"></span>Trivial</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Tolerável</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Moderado</button>
+                                <button class="dropdown-item" type="button"><span class="color"></span>Substancial</button>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
